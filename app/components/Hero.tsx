@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Mail, Sparkles } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
-import profile from "@/public/profile.png";
+import profile from "@/public/profile.jpeg";
 import { MagneticButton } from "./MagneticButton";
 import { SOCIALS } from "@/utils/constants/constant";
 import Image from "next/image";
@@ -25,7 +25,7 @@ export function Hero() {
                         variants={item}
                         className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-white/[0.03] px-3 py-1 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground"
                     >
-                        <Sparkles className="h-3 w-3 text-accent" /> Available for new work
+                        <Sparkles className="h-3 w-3 text-gradient" color="#30A7F2" /> Available for new work
                     </motion.span>
 
                     <motion.h1
@@ -102,7 +102,7 @@ export function Hero() {
                             src={profile}
                             alt="Alex Carter portrait"
                             fill
-                            className="object-cover"
+                            className="object-cover object-[center_10%] scale-100 transition duration-500 group-hover:scale-100"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
                         <motion.div
@@ -116,8 +116,8 @@ export function Hero() {
                                 <div className="mt-0.5 text-foreground">Building at Nodlays</div>
                             </div>
                             <span className="relative flex h-2.5 w-2.5">
-                                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-70" />
-                                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-accent" />
+                                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[image:var(--gradient-primary)] opacity-70" />
+                                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[image:var(--gradient-primary)]" />
                             </span>
                         </motion.div>
                     </div>

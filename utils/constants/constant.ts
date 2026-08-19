@@ -8,9 +8,10 @@ import {
     ShieldUser,
 } from "lucide-react";
 
-import project1 from "@/public/project-1.jpg";
-import project2 from "@/public/project-2.jpg";
+import project1 from "@/public/awardGenie.png";
+import project2 from "@/public/muster_360.png";
 import project3 from "@/public/project-3.jpg";
+import project4 from "@/public/flow_board.png";
 
 export const NAV_LINKS = [
     { href: "#home", label: "Home" },
@@ -23,9 +24,9 @@ export const NAV_LINKS = [
 
 export const STATS = [
     { value: 3, suffix: "+", label: "Years Experience" },
-    { value: 10, suffix: "+", label: "Projects Shipped" },
-    { value: 8, suffix: "+", label: "Happy Clients" },
-    { value: 12, suffix: "", label: "Open Source Repos" },
+    { value: 10, suffix: "+", label: "Projects Built" },
+    { value: 5, suffix: "+", label: "Production Projects" },
+    { value: 15, suffix: "+", label: "Technologies" },
 ];
 
 export const SKILL_CATEGORIES = [
@@ -33,7 +34,7 @@ export const SKILL_CATEGORIES = [
         icon: Palette,
         title: "Frontend",
         skills: [
-            { name: "React", level: 95 },
+            { name: "React.js", level: 95 },
             { name: "Next.js", level: 92 },
             { name: "TypeScript", level: 90 },
             { name: "Tailwind CSS", level: 94 },
@@ -75,8 +76,9 @@ export const SKILL_CATEGORIES = [
         icon: ShieldUser,
         title: "Authentication",
         skills: [
-            { name: "JWT Authentication", level: 90 },
-            { name: "Clerk Authentication", level: 94 },
+            { name: "Auth", level: 90 },
+            { name: "Clerk", level: 94 },
+            { name: "Better Auth", level: 90 },
             { name: "RBAC", level: 80 },
         ],
     },
@@ -124,8 +126,7 @@ export const PROJECTS = [
             "An AI-powered MVP that streamlines award application workflows through intelligent profile generation and automation.",
         image: project1,
         tags: ["React.js", "Redux Toolkit", "Clerk", "Tailwind CSS", "ShadCN UI"],
-        live: "#",
-        github: "#",
+        live: "https://dev.awardgenieapp.com.au/",
         featured: true,
     },
     {
@@ -134,8 +135,26 @@ export const PROJECTS = [
             "An enterprise platform for workflow management, document generation, diagram creation, multilingual support, and secure business operations.",
         image: project2,
         tags: ["React.js", "Redux Toolkit", "React Konva", "React PDF", "Tailwind CSS", "Radix UI"],
-        live: "#",
-        github: "#",
+        live: "https://dev.muster360.fishvision.net.au",
+        featured: true,
+    },
+    {
+        title: "FlowBoard",
+        description:
+            "A full-stack SaaS project management platform for managing teams, projects, tasks, and performance analytics with role-based access and real-time data.",
+        image: project4,
+        tags: [
+            "Next.js",
+            "TypeScript",
+            "Redux Toolkit",
+            "RTK Query",
+            "Tailwind CSS",
+            "PostgreSQL",
+            "Clerk",
+            "Vercel",
+        ],
+        live: "YOUR_VERCEL_URL",
+        github: "YOUR_GITHUB_URL",
         featured: true,
     },
     {

@@ -18,7 +18,7 @@ export function SectionHeader({
             className="mx-auto mb-16 max-w-2xl text-center"
         >
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-white/[0.03] px-3 py-1 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
-                <span className="h-1 w-1 rounded-full bg-accent" /> {eyebrow}
+                <span className="h-1 w-1 rounded-full bg-[image:var(--gradient-primary)]" /> {eyebrow}
             </span>
             <h2 className="mt-5 text-4xl font-semibold tracking-tight text-gradient sm:text-5xl">
                 {title}

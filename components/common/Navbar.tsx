@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { NAV_LINKS } from "../../utils/constants/constant";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import logo from "@/public/logo_.png";
 
 export function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -45,11 +47,15 @@ export function Navbar() {
                     )}
                 >
                     <a href="#home" className="flex items-center gap-2 font-semibold tracking-tight">
-                        <span className="grid h-8 w-8 place-items-center rounded-lg bg-[image:var(--gradient-primary)] text-primary-foreground shadow-[var(--shadow-glow)]">
-                            A
-                        </span>
-                        <span className="hidden sm:block">Aadi.dev</span>
+                        <Image
+                            src={logo}
+                            alt={"logo"}
+                            loading="lazy"
+                            width={180}
+                            height={80}
+                        />
                     </a>
+
 
                     <nav className="hidden items-center gap-1 md:flex">
                         {NAV_LINKS.map((l) => {

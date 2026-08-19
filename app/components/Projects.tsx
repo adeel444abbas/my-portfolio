@@ -66,14 +66,14 @@ export function Projects() {
                                     >
                                         Live demo <ExternalLink className="h-3.5 w-3.5" />
                                     </a>
-                                    <a
+                                    {p.github && <a
                                         href={p.github}
                                         target="_blank"
                                         rel="noreferrer"
                                         className="inline-flex items-center gap-2 rounded-full border border-border bg-white/[0.03] px-4 py-2 text-xs font-medium text-foreground transition hover:-translate-y-0.5 hover:border-primary/40"
                                     >
                                         Source <FaGithub className="h-3.5 w-3.5" />
-                                    </a>
+                                    </a>}
                                 </div>
                             </div>
                         </motion.article>
